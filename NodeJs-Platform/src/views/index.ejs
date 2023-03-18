@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Spotify Admin Controller</title>
+</head>
+
+<body>
+    <table class="w3-table-all w3-hoverable">
+        <thead>
+            <tr class="w3-light-grey">
+                <th>ID</th>
+                <th>username</th>
+                <th>password</th>
+                <th>email</th>
+                <th>fullname</th>
+                <th>phonenumber</th>
+                <th>gender</th>
+                <th>roleid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <% for(let i=0; i < dataUser.length; i++) { %>
+
+                <tr>
+                    <td>
+                        <%= dataUser[i].userid %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].username %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].password %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].email %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].fullname %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].phonenumber %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].gender %>
+                    </td>
+                    <td>
+                        <%= dataUser[i].roleid %>
+                    </td>
+                    <td>
+                        <button type="button"><a href="details/user/<%= dataUser[i].userid %>"
+                                target="_blank">Details</a></button>
+                        <form action="/edit-user/<%= dataUser[i].userid %>" method="GET">
+                            <button type="submit">Edit</button>
+                        </form>
+
+                        <form action="/delete-user" method="POST">
+                            <input type="text" hidden name="userId" value="<%= dataUser[i].id %>" />
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+
+
+    </table>
+</body>
+
+</html>

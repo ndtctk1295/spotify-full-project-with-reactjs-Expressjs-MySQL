@@ -1,0 +1,85 @@
+.info {
+  overflow: auto;
+  margin-top: 20px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-left: 5%;
+  height: 200px;
+  width: 200px;
+}
+
+.taskbar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 13px;
+  height: 70;
+}
+
+.song-list {
+  color: white;
+  list-style-type: none;
+  margin-left: 5%;
+  margin-top: 13px;
+}
+
+.raise {
+  font-size: 65px;
+  transition: 0.3s;
+}
+.raise:hover,
+.raise:focus {
+  font-size: 70px;
+}
+
+.follow {
+  cursor: pointer;
+  border: 0;
+  border-radius: 20px;
+  font-weight: 600;
+  margin: 0 3px;
+  width: 80px;
+  height: 62;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}
+
+.follow:hover {
+  color: white;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+  background-color: rgba(104, 85, 224, 1);
+}
+
+.song {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  width: 1050;
+}
+.song:hover {
+  background: rgb(105, 105, 170, 0.1);
+}
+.artist-info-title {
+  color: white;
+  margin-left: 3%;
+  margin-top: 5%;
+  font-size: 80px;
+}
+.song-id {
+  margin-left: 5;
+  width: 10;
+  height: 10;
+}
+.artist-song-img {
+  margin-left: 20px;
+  margin-top: 5px;
+  height: 50px;
+  width: 50px;
+}
+.song-name {
+  margin-left: 40px;
+  width: 900px;
+}

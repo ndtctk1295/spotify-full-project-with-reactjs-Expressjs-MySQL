@@ -1,0 +1,45 @@
+.avatars {
+  margin-top: -10px;
+  padding-left: 20px;
+  display: flex;
+}
+.avatar-div {
+  display: flex;
+  flex-direction: row;
+}
+.profile-picture {
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.avatar-list {
+  list-style-type: none;
+  margin-left: 15px;
+  padding: 5px;
+  transition: 0.3s;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-list:hover {
+  background: rgb(105, 105, 170, 0.1);
+}
+
+.play-icon {
+  opacity: 0;
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+  margin-bottom: 20%;
+  transition: 0.3s;
+}
+
+.avatar-list:hover .play-icon {
+  opacity: 1;
+  color: white;
+}

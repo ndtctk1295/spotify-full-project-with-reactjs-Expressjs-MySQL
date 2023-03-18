@@ -1,0 +1,19 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  padding-top: 100px;
+} */
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+  font-size: larger;
+}
+.link-home {
+  text-decoration: none;
+  padding: 15px;
+}

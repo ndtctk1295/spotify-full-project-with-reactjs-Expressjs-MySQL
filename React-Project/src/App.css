@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: "Spotify";
+  src: local("Spotify"), url("./Fonts/Gotham-Spotify-Font/Gotham-Bold.otf") format("truetype")
+}
+
+.App{
+  font-family: "Spotify"
+}

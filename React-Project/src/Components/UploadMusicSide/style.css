@@ -1,0 +1,22 @@
+input .file {
+  background-color: white;
+  color: white;
+}
+.file {
+  color: white;
+}
+.upload-music-form-title,
+.song-name-label,
+.message-div {
+  color: white;
+}
+.upload-music-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.file-submit {
+  display: flex;
+  flex-direction: column;
+}

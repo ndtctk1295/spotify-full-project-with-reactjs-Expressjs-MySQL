@@ -1,0 +1,24 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 22%;
+  background-color: #111727;
+  box-shadow: 5px 0px 2px #090f1f;
+  color: #fff;
+}
+
+.main_side {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  background-color: #090f1f;
+}
